@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flexbox Layout Lab</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Responsive Header -->
+<header class="header">
+    <h1 class="logo">MySite</h1>
+    <nav class="nav">
+    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    </nav>
+</header>
+
+<!-- Card Grid -->
+<main class="card-grid">
+    <article class="card">
+    <a href="SemanticProfile.html">Card 1</a>
+    </article>
+    <article class="card">Card 2</article>
+    <article class="card">Card 3</article>
+    <article class="card">Card 4</article>
+    <article class="card">Card 5</article>
+    <article class="card">Card 6</article>
+</main>
+<script>
+  const toggle = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelector('.nav-links');
+
+  toggle.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+</script>
+
+</body>
+</html>
